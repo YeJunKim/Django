@@ -2,22 +2,65 @@
 
 <head>
     <title>HYJ_Intelligence</title>
+    <style type="text/css">
+        #center {
+            position: absolute;
+            top: 300px;
+            left: 660px;
+            width: 750px;
+            height: 200px;
+        }
+        #middle{
+            position: absolute;
+            top: 200px;
+            left: 580px;
+            width: 750px;
+            height: 200px;
+        }
+        #top{
+            position: absolute;
+            top: 10px;
+            left: 1600px;
+            width: 750px;
+            height: 200px;
+        }
+        #icon{
+            position: absolute;
+            top: 270px;
+            left: 660px;
+            
+        }
+    </style>
 </head>
 
 <body>
-    <div style="text-align:center;" >
+    <div style="text-align:center">
         <h1><a href="">HYJ_Intelligence</a></h1>
     </div>
-    <br><br><br><br><br>
-    
-    
-    <div style="text-align:center">
-        <h2>hash 입력</h2>
+    <div id="top">
+        <button class="ui active button"><a href="/Login">Login</a></button>
+        <button class="ui active button"><a href="/register">register</a></button>
     </div>
-    <div style="text-align:center" class="alert">
+
+    <div id="middle">
+        <ul position:absolute; style="text-align:center">
+            <h2>hash 입력</h2>
+        </ul>
+    </div>
+
+    <div id="center" class="alert">
         <INPUT TYPE=TEXT NAME=hash_input SIZE=75 VALUE='hash input'>
-        <button class="ui active button"><a href="/submit">Submit</a></button>
+        <button class="ui input focus"><a href="/submit">Submit</a></button>
     </div>
+
+
+    <div id="icon">
+        <button class="ui active button"><a href="/api">api</a></button>
+        <button class="ui active button"><a href="/analysis">analysis</a></button>
+    </div>
+
+
+
 
 </body>
 
